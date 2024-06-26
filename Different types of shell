@@ -1,0 +1,62 @@
+Shell types:-
+
+  Bourne Shell (sh)
+  C Shell (csh or tcsh )
+  Korn Shell (ksh)
+  Z Shell (Zsh)
+  Bourne again Shell (bash) Most popular
+
+To check the Shell in your OS. the command is:-
+    echo $SHELL         
+    Output is like     /bin/bash
+
+
+To change the default Shell
+command is :-
+    Chsh
+    Password:
+    Changing the login shell for michael
+    Enter the new value, or press ENTER for the default Login Shell [/bin/bash]: /bin/sh
+
+
+Some feature of Bash Shell:-
+    Bash auto completion by entering Tab key
+    We can set alias e:g syntax:- alias dt=date   so whenever you hit dt then you will get same output as with date.
+    we can see command history by history command.
+
+Bash Enivornment Variables
+    echo $SHELL         
+    Output is like   /bin/bash
+    so in this $SHELL is Environment Variable. Variable are same as in any programming language to store some information.
+    By using env command you can see all the evironment variables.
+    To make a varibale use export command. syntax export office=Toronto
+
+Path variablesn
+    To see use command [  echo $PATH   ]
+    To set path variable [   export PATH=$PATH:/obs/bin   ]
+    you can check by using which command [   which obs studio   ]
+
+Bash prompt
+
+    [~]$
+    ~ means present working directory
+    $ means user prompt symbol
+    
+        ubuntu-server: PS1="[\d \t \u@h: \w ]$ "
+        
+        Output is below
+        [Thu Mar 12 22:12:54 bob@caleston: ~ 1 $
+    
+    These are the arguments below: -
+      Id: the date in "Weekday Month Date" format (e.g., "Tue May 26")
+      le: an ASCIl escape character (033)
+      \h: the hostname HQDN \H: the complete hostname
+      In : newline
+      Ir: carriage return
+      Is: the name of the shell
+      It : the current time in 24-hour HH:MM:SS format
+      \T : the current time in 12-hour HH:MM:SS format
+      1@: the current time in 12-hour am/pm format
+      IA: the current time in 24-hour HH:MM format lu : the username of the current user
+      Iw : the current working directory, with $HOME abbreviated with a tilde IW: the basename of the current working directory, with $HOME abbreviated with a tilde
+      1$: if the effective UID is 0, a #, otherwise a $

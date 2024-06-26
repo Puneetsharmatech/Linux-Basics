@@ -1,0 +1,13 @@
+File types in linux are below:
+
+      Regular file         -  Regualar file are like images, configuration file, data files and scripts.
+      Directory File       -  these are the files that store other files like /home/puneet/user
+      Block special files  -  Represent devices that are accessed in blocks of data (e.g., hard disks, flash drives).
+      Symbolic file        -  (Soft links)These are shortcuts or references to other files or directories.Changing a symbolic link doesn't affect the original file, but deleting it removes the shortcut. (Hard links) its affects other files.
+      Character special files  -  Represent devices that are accessed as a stream of characters (e.g., keyboards, terminals).
+      Named Pipes (p):     -  Also known as FIFO (First-In, First-Out), they allow communication between different processes. Data written to a named pipe by one process is read by another process in the order it was written.
+      Socket Files (s):    -  Used for inter-process communication, especially over a network.
+
+
+we can identify file using file command. e:g is below
+      file /home/user/file.txt

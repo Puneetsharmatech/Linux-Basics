@@ -1,7 +1,11 @@
              Command                          |                             Description
-Pwd                                                               Print Working directory
-Ls                                                                List content in Directory
-mkdir < Directory name>                                           Make a new directory
+pwd                                                               Print Working directory
+ls                                                                List content in Directory
+ls -l                                                             To view file in long list
+ls -a                                                             To see hidden files
+ls -lt                                                            long list files in order created
+ls -ltr                                                           long list files in the reverse order created
+mkdir <Directory name>                                            Make a new directory
 mkdir <Directory 1> <Directory 2> <Directory 3>                   Create multiple directory in one command
 mkdir -p <Directory 1>/<Directory 2>                              This will create Directory 2 in Directory 1 and allow to create a parent directory
 cd ..                                                             Go back to previous directory
@@ -21,3 +25,6 @@ rm <path of file>                                                 Remove file or
 cat <path of file>                                                To view content in a file
 cat > <path of file>                                              To add content in file and then enter control + D to exit.
 Touch <path of file>                                              To create a empty file.
+More <file.txt>                                                   We can view file in scrollable manner. <Space> - scrolls the display, one screenful of data at a time. <Enter> - scrolls the display one line. <b> - scrolls the display backwards one screenful of data. </> - search text
+less <file.txt>                                                   Same with more command but for less content. <Up Arrow> - scrolls up the display one line. <Down Arrow> - scrolls down the display one line. </> - search text
+man date    |  whatis date                                        Both are used to get detail of date command and any other command

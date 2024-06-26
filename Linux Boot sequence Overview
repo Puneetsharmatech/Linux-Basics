@@ -1,1 +1,11 @@
+Boot process is broken down into four stages:-
+    BIOS Post (POST stand for power on self test) - In this stage BIOS post ensure that hardware components attached to the device. If its failed system not proceed with Bootloader stage. 
+    Boot loader(GRUB2)       - After the succesful POST test, the BIOS loads and execute the boot code from the boot device, which is located in the first sector the hard disk. In linux, this is located in the /boot file system. the boot loader provider the user with the boot screen. GRUB 2 is a e:g of bootloader.
+    Kernel intialization     - The kernel is loaded into memory and start executing. During this space, kernel carries out task such as intializing hardware and memory management task among other things. once it completly opertaional then kernel lookout for init process.
+    INIT process (systemd)   - Kernel lookout of init process which setup the user space and the processes needed for the user environment. In most of current linus distribution, the init function init then calls the systemd daemon. the systemd is responsible for bringing the linux host to usable state. Systemd is respoinsible for mounting file system.
 
+
+
+Before the systemd, system V init is mostly used. these were used in RHEL 6 and centos 6 distributions. one of the key advantages of system V is that it reduce system startup time by parlleling the start up services
+To check init system used run the command  ls -l against the file /sbin/init. Command is below:-
+    ls -l /sbin/init

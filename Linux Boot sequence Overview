@@ -9,3 +9,27 @@ Boot process is broken down into four stages:-
 Before the systemd, system V init is mostly used. these were used in RHEL 6 and centos 6 distributions. one of the key advantages of system V is that it reduce system startup time by parlleling the start up services
 To check init system used run the command  ls -l against the file /sbin/init. Command is below:-
     ls -l /sbin/init
+
+
+
+Runlevel (systemd targets)
+        linux can run in multiple mode. One person's linux machine starts with CLI and another person's machine starts with GUI because it configured for runlevels.
+        When you hid runlevel command in shell. you will get output like N  5  (5 For GUI) and N   3 (3 for CLI) 
+        In N  5 , device-manager service is enabled whereas in 3 it is disabled.
+        systemd.targets name for 5 is graphical.target and for 3 it is multiuser.target
+        For OS RHEL6/centos6  -- runlevel
+        for OS RHEL7/centos7  -- systemd.targets
+
+
+viewing and changing systemd 
+ to view command is systemctl get-defualt
+
+to change to mutliuser, command is  systemctl set-default multi-user.target
+
+Run level 0   -  Poweroff.target
+Run level 1   -  rescue.target
+Run level 2   -  multi-user.target
+Run level 3   -  multi-user.target
+Run level 4   -  multi-user.target
+Run level 5   -  graphical.target
+Run level 6   -  reboot.target

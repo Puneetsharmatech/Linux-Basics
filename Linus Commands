@@ -1,0 +1,23 @@
+             Command                          |                             Description
+Pwd                                                               Print Working directory
+Ls                                                                List content in Directory
+mkdir < Directory name>                                           Make a new directory
+mkdir <Directory 1> <Directory 2> <Directory 3>                   Create multiple directory in one command
+mkdir -p <Directory 1>/<Directory 2>                              This will create Directory 2 in Directory 1 and allow to create a parent directory
+cd ..                                                             Go back to previous directory
+cd                                                                Directly go to home directory
+cd /var/www/html                                                  changing to home by defining Absolute path
+cd  <Directory name>                                              Change current directory to another one with relative path
+{
+pushd <Directory Name>                                            Saves the current directory onto a stack and changes the current working directory to the specified directory.
+popd                                                              Removes the top directory from the stack and changes the current working directory to that removed directory.
+
+They are often used together to temporarily switch to a different directory and then return to the previous one quickly.
+}
+mv <Source/path> <Destination/path>                               Move file and directory from one location to another
+cp <Source/path> <Destination/path>                               Copy file one location to another
+cp -r <Source/path> <Destination/path>                            Copy directory one location to another. -r means recursive operations
+rm <path of file>                                                 Remove file or directory
+cat <path of file>                                                To view content in a file
+cat > <path of file>                                              To add content in file and then enter control + D to exit.
+Touch <path of file>                                              To create a empty file.

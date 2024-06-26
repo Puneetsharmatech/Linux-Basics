@@ -1,0 +1,40 @@
+Linux Kernel 
+      Imagine your computer as a bustling city. The hardware (CPU, memory, storage) is the physical infrastructure, while the software (applications, programs) is the people living and working there. The Linux kernel is like the city's government, responsible for managing all the resources and making sure everything runs smoothly.
+      
+      Here's what the kernel does:
+      
+      * **Resource Allocation:** Decides who gets to use the CPU, memory, and other hardware resources, and for how long. This ensures fair sharing and prevents conflicts.
+      * **Process Management:** Starts, stops, and coordinates the running of different programs (processes), like a traffic controller managing cars on the road.
+      * **Hardware Drivers:** Acts as a translator between the hardware and the software, allowing them to communicate. For example, it tells the printer how to print a document.
+      * **File System Management:** Organizes and manages files on the storage device, like a librarian keeping track of books.
+      * **Security:** Enforces security measures to protect the system from unauthorized access or malicious attacks, like a police force maintaining law and order.
+      
+      In essence, the Linux kernel is the core of the operating system, acting as a bridge between the hardware and the software. It's responsible for the essential functions that allow your computer to work.
+      
+      Here are some key characteristics of the Linux kernel:
+      
+      * **Open Source:** Its code is freely available, allowing anyone to view, modify, and distribute it.
+      * **Highly Customizable:** Can be adapted to various hardware configurations and use cases.
+      * **Stable and Reliable:** Known for its stability and robustness, making it suitable for critical applications and servers.
+      
+      The Linux kernel is used in a wide range of devices, from personal computers and servers to smartphones and embedded systems. It's a versatile and powerful operating system foundation that has contributed significantly to the growth of open-source software and the technology industry as a whole.
+
+Four majour task of kernel
+      Linux kernel is respoinsible for four majour tasks: Memory Management,  Process Management, Device Drivers, system calls and security.
+      Kerenl versions: with command uname you can get kerenl name and with command uname -r you will get version.
+
+In kernel Memory is divided into two space called Kernel space and User space.
+      Kernel Space: This is the protected area where the core of the operating system, the kernel, lives. It's like the control center of the house, 
+                    managing all the essential functions like memory, devices, and security. Only authorized personnel (the kernel itself) have access to this area.
+      
+      User Space: This is where all the regular programs and applications you use live and work. It's like the living rooms, bedrooms, and kitchen of the house. These
+                  programs can't directly access the kernel space (basement) or the hardware. They have to ask the kernel for permission (through system calls) if they need to do something like access a file or send data over the network.
+      
+      
+      
+            kernel space is the portion of the memory in which kernel executes and provide its services. A process running in the kernel space has unrestricted access to the hardware. As it striclty reserved for kernel codes, kernel extension, and most device drivers.
+            In user space, application is using system call to kernel space to get data from disks.
+            e:g to open /etc/os-release file. user space make request to kerenl space with system calls and then get information from data where it is stored.
+
+
+

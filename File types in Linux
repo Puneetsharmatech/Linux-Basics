@@ -11,3 +11,29 @@ File types in linux are below:
 
 we can identify file using file command. e:g is below
       file /home/user/file.txt
+
+
+
+
+File system Hierarchy 
+      Root Directory (/): This is the main entrance of the library, where everything starts.
+      
+      Key Sections:
+                  
+            bin (binaries): Holds essential tools for basic system operations (like turning lights on/off).
+            boot (bootloader): Contains files needed to start the computer (like the library's opening procedures).
+            dev (devices): Stores files representing hardware components (like the library's computers and printers).
+            etc (configuration): Houses system-wide configuration files (like the library's rulebook).
+            home (users' homes): Each user has a personal space for their files (like individual desks in the library).
+            lib (libraries): Contains shared libraries used by programs (like reference books for the library's visitors).
+            media (removable media): Automatically mounts external devices like USB drives (like a special shelf for temporary items).
+            mnt (mount points): Temporarily attaches additional storage devices (like extra bookshelves brought in for a specific event).
+            opt (optional software): Holds additional software packages not essential to the system (like the library's collection of rare books).
+            proc (process information): Provides a virtual file system with information about running processes (like a live feed of who's using the library right now).
+            root (root user's home): The superuser's personal directory (like the head librarian's office).
+            sbin (system binaries): Contains essential system administration tools (like keys to restricted areas of the library).
+            srv (service data): Stores data for services provided by the system (like the library's online catalog).
+            sys (system files): Contains information about the kernel and hardware (like technical manuals for the library's infrastructure).
+            tmp (temporary files): A space for temporary files (like a scratchpad for visitors).
+            usr (user programs): Holds most user-installed applications and libraries (like the main collection of books for visitors).
+            var (variable data): Stores data that changes frequently (like the library's logbook of borrowed books).

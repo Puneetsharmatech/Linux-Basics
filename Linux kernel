@@ -32,9 +32,9 @@ In kernel Memory is divided into two space called Kernel space and User space.
       
       
       
-            kernel space is the portion of the memory in which kernel executes and provide its services. A process running in the kernel space has unrestricted access to the hardware. As it striclty reserved for kernel codes, kernel extension, and most device drivers.
-            In user space, application is using system call to kernel space to get data from disks.
-            e:g to open /etc/os-release file. user space make request to kerenl space with system calls and then get information from data where it is stored.
+      kernel space is the portion of the memory in which kernel executes and provide its services. A process running in the kernel space has unrestricted access to the hardware. As it striclty reserved for kernel codes, kernel extension, and most device drivers.
+      In user space, application is using system call to kernel space to get data from disks.
+      e:g to open /etc/os-release file. user space make request to kerenl space with system calls and then get information from data where it is stored.
 
 
 

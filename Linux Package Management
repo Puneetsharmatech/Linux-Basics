@@ -1,0 +1,73 @@
+A Package manager is a software in a linux system that provides a consistent and automated process of installing, upgrading and configuring, removing packages from OS.
+Functions of Package Managers:-
+  Package integrity and authenticity
+  Simplified package management
+  Grouping package
+  Manage Dependencies
+
+
+
+Tyeps of Package Managers:-
+  Debian based
+    APT
+    DPKG
+    APT-GET
+
+  Redhat based distribution
+    
+    RPM(Redhat package Management)
+    YUM
+    DNF
+
+
+
+Redhat based package manager
+
+    RPM (Redhat package Management)
+        The file extension of RPM packages are .rpm
+        RPM have five basic mode of operations:- Installing, Uninstalling, upgrading, query and verifying. each of these modes can be run by RPM command and following command options.
+        To install a package use rpm -ivh telnet.rpm   (-i stand for Installl. -v stand Verbose for used to get  output of command )
+        To uninstall the package rpm -e telent.rpm
+        To upgrade package from old to new use rpm -Uvh telnet.rpm
+        To get detail about instlled package use rpm -q telnet.rpm
+        To verify the installed package rpm -Vf <path to file> 
+    
+    
+    
+    
+    YUM (higher level package management than RPM) stand for yellowdog updater Modifier
+        IT act as high level package manager but under the hood of RPM
+        To show all the repo added to your system the command is yum repolist
+        To install package yum install httpd
+        To remove the package yum remove httpd
+        To update all the package in system use yum update
+        yum provides tcpdump (to check who provide packages to tcpdump)
+
+
+Debian based package manager
+
+     DPKG(stands for debian package manager )
+          it is low level package manager.
+          it is used to install, upgrade, uninstalling, list, status and verifying  
+          The package extension is .deb
+          To install package use dpkg -i telnet.deb
+          To uninstall package use dpkg -r telnet.deb
+          To list package use dpkg -l telnet.deb
+          To status package use dpkg -s telnet.deb
+          To details of  package use dpkg -p <path to file>
+
+
+    APT/APT -GET(APT stand for advance package installer)
+          To install package apt install gimp
+          APT relies on DPKG utility similar to yum relies on RPM
+          APT relies on software repositery that contains packages that are installed on systems.
+          adding new updating package use apt update
+          apt updgrade to upgrade OS packages
+          apt edit-sources to update the repositery  
+          To install package use apt install telnet
+          To remove package use apt remove telnet
+          To search package in repo use apt search telnet
+
+
+
+

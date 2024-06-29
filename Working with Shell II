@@ -30,3 +30,25 @@ Search with in file
 
 
 IO Redirection
+ cat sample.txt - its is a standard input
+this is a file (its a output of cat sample.txt command) - its a standard output
+can't able to find or directory - its a standard error 
+
+
+Redirect Stdout
+echo $SHELL > shell.txt    (this command overites the content in shell.txt file)
+echo $SHELL >> shell.txt    (this will append new line in shell.txt )
+
+to redirect the error message we use 2>
+cat sample.txt 2> shell.txt    (error message would be added to shell.txt and overrites)
+cat sample.txt 2>> shell.txt   (to append the error in shell.txt file )
+
+
+
+
+Command line pipies
+  we can use for executing two command in once
+  command 1  |   Command 2 
+
+with tee command output print to new file e;g
+echo $SHELL | tee shell.txt

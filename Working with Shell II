@@ -1,0 +1,32 @@
+View file size, command is du -sk test.img     (-s means the size k mean data in killobyte and for human readable use option -sh)
+  other option is ls -lh 
+  
+  
+  Tar
+  Tar  is used to grouped multiple file directories into one file. it is usefull for archiving data. TAR stand for tape archive
+  
+  tar -c is used to create an archive. -f is used to specify the name of tar file.
+  tar -tf is used to see the content of tar file.
+  tar -xf is used to extract the content from tar file.
+  tar -zcf to compress the tarr ball (it is tar file)to reduce the size
+  bcap, zcap are the command to read without uncompressed the file.
+
+
+Searching for files and directories
+    with locate and find command we can find any file. so if we can't find with locate then try updatedb command and again try locate command.
+
+
+Search with in file
+      GREP is used to print line of matching pattern.
+      grep second  sample.txt (it is command to search second in sample file and give output for second line)
+      grep -i capital sample.txt (to search case sensitive)
+      grep -r "third line" /home/puneet    (It serch thirdline in all file under lies in puneet folder and gives output with file name where thirdline is exist  )
+      grep -v third sample.txt (-v for not showing patter)
+      grep -w (to search for whole word not half)
+      grep -A1 (use to numbering the lines before matching word)
+      grep -B1 (to print the line using number e;g print line 4) 
+
+
+
+
+IO Redirection

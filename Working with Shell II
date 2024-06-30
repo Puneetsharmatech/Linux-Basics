@@ -37,7 +37,7 @@ can't able to find or directory - its a standard error
 
 Redirect Stdout
 echo $SHELL > shell.txt    (this command overites the content in shell.txt file)
-echo $SHELL >> shell.txt    (this will append new line in shell.txt )
+echo $SHELL >> shell.txt    (this will append(add some new lines) new line in shell.txt )
 
 to redirect the error message we use 2>
 cat sample.txt 2> shell.txt    (error message would be added to shell.txt and overrites)

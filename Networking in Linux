@@ -1,1 +1,51 @@
+DNS in Linux
 
+      If you want to Ping another Host from current one then you can do by IP. However if you want to do with hostname that you have to edit the etc/hosts files and add the ip with hostname. here below is the syntax
+      192.1.12.1    db
+      you can add multiple hostname with one ip address
+      192.1.12.1    www.google.com
+      
+      Every host has DNS resolution configuration file at /etc/resolv.conf
+      in this file we say 
+      nameserver      192.1.12.100
+      nameserver      8.8.8.8       (its for externel website that are not in our internel DNS)
+      
+      
+      search     mycompany.com      (if you want to search web.mycompany.com than by doing this you can only do ping web. ) 
+      search     mycompany.com      prod.mycompany.com     (we can add multiple domains. )
+      
+      If you have Hostname resolve in file(/etc/hosts) and DNS server. then firslty it processed with file and then DNS server.
+      We can change this by editing /etc/nsswtich.conf file
+
+
+
+Record Types:
+
+    translate domain to IPV4   = A 
+    Translate domain to IPV6   = AAAA
+    translate domain to domain = CNAME
+
+
+Ping not may be the right tools always for DNS resolution
+    there are another tools like nslookup. but didn't consider entries in /etc/hosts file
+    nslookup  www.google.com
+
+
+another tool is DIG. it return in more details.
+  dig www.google.com
+
+
+
+Switching and Routing
+
+
+
+Gateway
+if you want to sent a packet from one network to anther then we have to specify(specify both in switches) the gateway and ip address route.
+ip route add 192.168.2.0/24 via 192.168.1.1
+
+you can check all route by command route 
+
+
+ip addr add 192.2.2.2/24 dev eth0 (used to add interface device) 
+   

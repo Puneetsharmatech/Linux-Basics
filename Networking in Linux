@@ -41,11 +41,14 @@ Switching and Routing
 
 
 Gateway
-if you want to sent a packet from one network to anther then we have to specify(specify both in switches) the gateway and ip address route.
-ip route add 192.168.2.0/24 via 192.168.1.1
+                  if you want to sent a packet from one network to anther then we have to specify(specify both in switches) the gateway and ip address route.
+                  ip route add 192.168.2.0/24 via 192.168.1.1
+                  
+                  you can check all route by command route 
+                  
+                  
+                  ip addr add 192.2.2.2/24 dev eth0 (used to add interface device) 
 
-you can check all route by command route 
 
 
-ip addr add 192.2.2.2/24 dev eth0 (used to add interface device) 
-   
+sudo ip link set dev eth0 up   (Command to up the interface)

@@ -6,3 +6,16 @@ Linux Security is very vast topic in linux that involves many topics:
     Network Security: it is used to restrict or allow access listening to services on linux server .
     SSH Hardening:  SSH stands for secure shell. it make sure only authenticate person can get access of linux server.
     SELinux:  it is using of secure policies for isolating applications running on the same system from each other 
+
+
+Linux Accounts:
+ all user list we can see in /etc/passwd file. with all Uid(User id) which is unique for every user and with defalut shell and home directory. same information about group is stored in /etc/group   
+
+User Account: an individual account for its use.
+Super user account : root user who have all the access. for this UID is 0
+System account: system account are created during OS installation. these use by software and services that not use by root user  UID account are oftenly lies under 100 or 500 to 1000.
+Service account: Service account are same as system account. its installed when services are install in linux. e:g nginx server, mysql.
+
+To see who is logged in command is who
+To see recent logged in user command is last
+

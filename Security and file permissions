@@ -18,4 +18,16 @@ Service account: Service account are same as system account. its installed when 
 
 To see who is logged in command is who
 To see recent logged in user command is last
+To change the user command is su -
+
+To change the sudo configutation the file is /etc/sudoers 
+
+the password of user are store in hash method in /etc/shadow
+
+all group name stored in /etc/group
+
+To add User, command is adduser <username>
+To set a password for username, command is passwd <username>
+
+To remove User, command is userdel <username>
 

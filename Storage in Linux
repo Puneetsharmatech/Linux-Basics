@@ -1,0 +1,45 @@
+Block devices: 
+      block devices is a type of file that can be found n /dev  directory. Traditional and SSD are the example of block devices. it is called because data read and written in blocks.
+      to see the list of block devices the command is lsblk 
+      in the output of lsblk, we can see sda. this is a entire disk. and sda1, sda2 ,sda3 are disk partions.  each block have major and minor number. major number is used to identify the type of block device.
+      to print partition table, command is Fdisk-L   
+      
+      
+      Partition types:
+      Primary : it is used to boot an OS. we can only create 4 primary partitions.
+      Extended: : it is used to create a logical partition
+      Logical: it is created in extended partition to extend the logical partition.
+      
+      maximum size of disk is 2TB
+      
+      
+      To create partion the command is gdisk /dev/<diskname>
+    after that enter n key. 
+
+
+Linux File Systems
+    we have two types of file system EXT2, EXT3 and EXT4 
+    lets do quick comparison
+EXT2:
+    2 TB file size
+    4 TB volume size 
+    support linux permissions
+    long crash recovery
+    support compression
+
+EXT3:
+    2TB file size
+    4TB volume size
+    uses journal
+    Backwards Compatible
+
+EXT4:
+    16TB file size
+    1Exabyte volume size
+    uses journals
+    uses chksum for journal
+    Backward compatible
+
+
+
+

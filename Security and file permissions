@@ -35,6 +35,28 @@ Linux Accounts:
 
 File permission and Ownerships
 
+            in linux, octal value of read(r) is 4, write(w) is 2 and execute(x) is 1. if the permission is 0, it means no permission.
+            when we see details of file, it look like   -rwxrwxr-x. it mean first three rwx permision to owner, next three to group and last three permission to other.
+            Command needs to modify the permission is chmod.
+            chmod 766 <filename>   
+            above syntax is numeric way to change the permission
+            
+            now its symbolic method
+            
+            chmod u+rwx <filename>       this command mean give all access to users.
+            chmod ugo+rwx <filename>      this command mean give all permission to users group and others
+            chmod o_rwx <filename>        this command mean remove all access to others .
+            chmod u+rwx, g+r-x,o-rwx <test-file>     Full access for Owner, add read, remove execute for group and no access for others.
+
+Changing ownership of file
+
+command is chown
+chown bob:developer <test-file>        Changes owner to bob and group to developer
+chown bob andoid. apk          Changes just the owner of the file to bob. Group unchanged.
+chgrp android test-file        Change the group for the test-file to the group called android.
+
+
+
 
 
 

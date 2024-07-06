@@ -54,6 +54,15 @@ To create a file system:
 To make this mount availabe after the reboot edit /etc/fstab file.
 
 
+DAS,NAS and SAN
+
+
+NFS (Network file system):
+            it store data in file instead of blocks. it works on server client model. 
+            NFS maintain export configuration file in /etc/exports
+
+
+
 
 
 

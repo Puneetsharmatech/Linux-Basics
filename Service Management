@@ -1,0 +1,28 @@
+systemd
+      the files for systemd are stored in /etc/systemd/ and with the end of .service
+      
+      to Start the service, command is systemctl start <filename>.service
+      systemctl status show the status of command
+      
+      
+      systemd tools
+      
+      systemctl: it is used to manage the service like start, restart, stop, enable, disable, reload, list and etc. some of e:G of systemctl are belo
+      systemctl start docker
+      systemctl stop docker
+      systemctl restart docker
+      systemctl reload docker
+      systemctl enable docker
+      systemctl disable docker
+      systemctl status docker
+      
+      
+      to open service configuration file with text editor use command systemctl edit <nameof file>.service --full
+      
+      
+      systemctl list-units --all   this provide all list of active inactive dead systemd 
+
+journalctl: it is tool to troubleshoot the issues.
+usally it check the log entries
+ command journalctl print all log entries oldest to newest 
+for specific service command is journalctl -u docker.service

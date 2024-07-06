@@ -50,11 +50,62 @@ File permission and Ownerships
 
 Changing ownership of file
 
-command is chown
-chown bob:developer <test-file>        Changes owner to bob and group to developer
-chown bob andoid. apk          Changes just the owner of the file to bob. Group unchanged.
-chgrp android test-file        Change the group for the test-file to the group called android.
+            command is chown
+            chown bob:developer <test-file>        Changes owner to bob and group to developer
+            chown bob andoid. apk          Changes just the owner of the file to bob. Group unchanged.
+            chgrp android test-file        Change the group for the test-file to the group called android.
 
+
+
+Password less SSH
+        SSH is used for logging into and executing commands on a remote computer.
+        syntax for SSH is below
+        SSH <Hostname or IP address>
+        SSH <username>@<Hostname or IP address>         we also can specify username.
+        
+        
+        we can access remote server shell by providing username and password.
+        
+        For passwordless authentication, we have to generate a key pair on client side that contains private and public key
+        To create key pair in client side, the command is ssh-keygen -t rsa
+        after creating, the next step is copy the public key to remote server.
+        for that command is ssh-copy-id <hostname>@<IP address>
+        
+        
+        
+        the key is stored under /home/bob/.ssh/authorized_keys/  in the remote server  
+
+
+scp command
+
+    scp <file path> <username>:<destination file path>
+    copy data from one server to another 
+
+IPtables 
+
+        iptables -A INPUT -p tcp -s 172.223.23.54  --dport 22 -j ACCEPT
+        
+        -A means Add rule
+        -p mean protocol
+        -s mean source
+        -d mean destination
+        -dport  mean destination port 
+        -j mean action to take
+        -I instead of -A insert the rule in the top of chain 
+        -D to delete the rule
+        
+        iptables -D OUTPUT 5
+        
+        To list all iptables rule the command is iptables -L
+
+
+CRON
+it is used to do a schedule task
+
+to see all cron job command is crontab -l
+to create new command is crontab -e
+in this vi editor first five *'s repersent date and time mean when the task is scheduled and next line is command
+NOTE: dont use sudo with these commands.
 
 
 
